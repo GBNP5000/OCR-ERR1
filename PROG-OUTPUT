@@ -1,26 +1,26 @@
+GLOBAL PATH FOR PYTHON & TESSERACT :
+
+C:\Python27\Scripts\;C:\Users\user\AppData\Local\Programs\Python\Python35-32\;C:\Users\user\AppData\Local\Programs\Python\Python35-32\Scripts\;E:\Tesseract-OCR\
+
+PROGRAM ERROR :
+
+Python 2.7.14 (v2.7.14:84471935ed, Sep 16 2017, 20:19:30) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+
 --- Start recognize text from image ---
-Recogm on Retains . .
-rm DneUn|queFeauue
-Auumy Form: rig?
-Gooele Dom Excellent Paar Free Unlimited cnrwersmns
-3 no
-ca...n..,a.. Excellent emu  Suﬂﬂﬂnmultllmgualdncumenls
-V reserves hedncumen .3 W and
-Dnlineocll Excellent Excellent 5”’! 50 P Q 1 V 1
-Dages lmmg
 
-mm emu Nana m. 
-
-V  ex lmm creenshn
-oclnerminal Excellent Excellent “ED! 50 C Q M Q 5 Q
-
-Dages Images
-
-mo..u... emu emu m. supn-msbatcn
------- Done -------
-
-     ABOVE TEXTS GOT FROM T1.png
-      
+Traceback (most recent call last):
+  File "D:\PYTHONS\IMG2TXT\IM2TXT.py", line 40, in <module>
+    print get_string(src_path + "CMDT.jpg")
+  File "D:\PYTHONS\IMG2TXT\IM2TXT.py", line 31, in get_string
+    result = pytesseract.image_to_string(Image.open(src_path + "thres.png"))
+  File "C:\Python27\lib\site-packages\pytesseract\pytesseract.py", line 294, in image_to_string
+    return run_and_get_output(*args)
+  File "C:\Python27\lib\site-packages\pytesseract\pytesseract.py", line 202, in run_and_get_output
+    run_tesseract(**kwargs)
+  File "C:\Python27\lib\site-packages\pytesseract\pytesseract.py", line 172, in run_tesseract
+    raise TesseractNotFoundError()
+TesseractNotFoundError: tesseract is not installed or it's not in your path
 
 PYTESSERACT :
 
